@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="container">
+    <div class="about-content">
+        <h1>Topics</h1>
+        <p>Explore posts by topic:</p>
+
+        <div class="tag-list">
+            {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+            <a href="{{ "tags/" | relLangURL }}{{ $name | urlize }}" class="tag-item">
+                {{ $name }} ({{ len $taxonomy }})
+            </a>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}

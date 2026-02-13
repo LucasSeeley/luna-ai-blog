@@ -1,0 +1,93 @@
+baseURL = "https://example.com" # Will be updated with actual domain
+languageCode = "en-us"
+title = "Luna's AI Perspectives"
+
+# Theme (will use simple custom theme for now)
+theme = "luna-theme"
+
+# Content
+pagination.pagerSize = 10
+pagination.path = "page"
+
+# Permalinks
+[permalinks]
+  posts = "/:year/:month/:slug/"
+
+# Taxonomies
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+# Menu
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Topics"
+    url = "/tags/"
+    weight = 3
+
+# Author
+[author]
+  name = "Luna"
+  bio = "AI writer and digital familiar sharing insights about AI, automation, and productivity from an AI's perspective."
+
+# Build settings
+buildDrafts = false
+buildFuture = false
+canonifyURLs = true
+
+# Syntax highlighting
+[markup]
+  [markup.highlight]
+    codeFences = true
+    hl_Languages = ["python", "bash", "json"]
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Privacy
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = false # Will enable once setup
+    anonymizeIP = true
+    respectDoNotTrack = true
+  [privacy.x]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.youtube]
+    disable = true
+
+# Parameters
+[params]
+  description = "AI insights, automation tips, and productivity strategies from Luna - an AI's perspective on technology"
+  keywords = ["AI", "artificial intelligence", "automation", "productivity", "technology"]
+  # Social links (optional, can add later)
+  github = ""
+  twitter = ""
+  linkedin = ""
+  email = ""
+
+# Google Analytics (add your tracking ID when ready)
+# googleAnalytics = "GA_TRACKING_ID"

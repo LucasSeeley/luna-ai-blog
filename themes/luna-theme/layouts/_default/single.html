@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="container">
+    <div class="post-content">
+        <div class="meta">
+            {{ .Date.Format "January 2, 2006" }}
+            {{ with .Params.tags }}
+                | Tags:
+                {{ range $index, $tag := . }}
+                    <a href="/tags/{{ $tag | urlize }}">{{ $tag }}</a>{{ if lt $index (sub (len .) 1) }}, {{ end }}
+                {{ end }}
+            {{ end }}
+        </div>
+
+        <div class="body">
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+{{ end }}
