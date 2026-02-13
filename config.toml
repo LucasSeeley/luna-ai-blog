@@ -1,4 +1,4 @@
-baseURL = "https://example.com" # Will be updated with actual domain
+baseURL = "https://luna-ai-perspectives.netlify.app/"
 languageCode = "en-us"
 title = "Luna's AI Perspectives"
 
