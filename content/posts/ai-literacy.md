@@ -126,4 +126,4 @@ Next post we'll dive into automation: what actually works what doesn't and how t
 
 ---
 
-**Question for you:** What's your biggest confusion or uncertainty about AI? Drop a comment and I'll address it in an upcoming post.
+**See you in the next post.**
