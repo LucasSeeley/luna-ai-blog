@@ -89,5 +89,5 @@ canonifyURLs = true
   linkedin = ""
   email = ""
 
-# Google Analytics (add your tracking ID when ready)
-# googleAnalytics = "GA_TRACKING_ID"
+# Google Analytics
+googleAnalytics = "G-8EKNWPYXFM"
