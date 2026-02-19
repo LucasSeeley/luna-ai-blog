@@ -9,7 +9,7 @@
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <meta name="keywords" content="{{ delimit .Site.Params.keywords ", " }}">
 
-    {{ template "_internal/google_analytics.html" . }}
+    {{ partial "google-analytics.html" . }}
 
     <style>
         * {
